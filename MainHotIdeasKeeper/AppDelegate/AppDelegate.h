@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Chartboost.h"
 
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, ChartboostDelegate>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) NSMutableArray *images;

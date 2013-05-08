@@ -7,14 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
+#import "GADBannerView.h"
 
-@interface MainScreenViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface MainScreenViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate, ADBannerViewDelegate>
 
 {
     UIImagePickerController *imagePick;
     UIButton *button;
     BOOL isChoosen ;
+    GADBannerView *bannerView_GADS;
+
 }
+
 
 @property (strong, nonatomic) UIImage *image;
 @property (strong,nonatomic) NSURL *imageUrl;

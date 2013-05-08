@@ -15,6 +15,7 @@
 #import "AboutScreenViewController.h"
 #import "AddPlaceOnMapViewController.h"
 #import "CameraScreenViewController.h"
+#import "Chartboost.h"
 
 @implementation AppDelegate
 
@@ -82,7 +83,15 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    Chartboost *chartboost = [Chartboost sharedChartboost];
+    chartboost.appId = @"5187de1f16ba47925b000002";
+    chartboost.appSignature = @"9351fbbef36affae5eb2c4fbb965d64b8ac4fd15";
+    chartboost.delegate = self;
+    [chartboost startSession];
+    [chartboost cacheInterstitial:@"Add Note"];
+    [chartboost cacheInterstitial:@"Add Place"];
+    [chartboost cacheMoreApps];
+    [chartboost showInterstitial];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

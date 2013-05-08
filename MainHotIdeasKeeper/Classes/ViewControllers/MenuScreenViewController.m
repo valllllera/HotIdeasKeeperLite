@@ -12,6 +12,7 @@
 #import "NVSlideMenuController.h"
 #import "AboutScreenViewController.h"
 #import "ViewNoteWithMapController.h"
+#import "Chartboost.h"
 
 @interface MenuScreenViewController ()
 
@@ -47,6 +48,12 @@
     [_notesButton.titleLabel setFont:[UIFont fontWithName:@"OpenSans-LightItalic" size:30]];
     [_geoButton.titleLabel setFont:[UIFont fontWithName:@"OpenSans-LightItalic" size:30]];
     [_libraryLabel setFont:[UIFont fontWithName:@"OpenSans-LightItalic" size:13]];
+    
+    [self fixButton:_aboutButton];
+    [self fixButton:_mainButton];
+    [self fixButton:_notesButton];
+    [self fixButton:_geoButton];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,6 +96,7 @@
     [self.slideMenuController setContentViewController:[[UINavigationController alloc]initWithRootViewController:aboutScreenViewController] animated:YES completion:nil];
 }
 
+
 - (IBAction)siteLinkBtnClicked:(id)sender
 {
     NSURL *url = [NSURL URLWithString:@"http://vexadev.com"];
@@ -102,5 +110,11 @@
                                               otherButtonTitles:nil];
         [alert show];
     }
+}
+
+- (void)fixButton:(UIButton *)button
+{
+    [button setBackgroundImage:[[button backgroundImageForState:UIControlStateNormal] resizableImageWithCapInsets:UIEdgeInsetsMake(20, 10, 20, 10)] forState:UIControlStateNormal];
+    [button setBackgroundImage:[[button backgroundImageForState:UIControlStateHighlighted] resizableImageWithCapInsets:UIEdgeInsetsMake(20, 10, 20, 10)] forState:UIControlStateHighlighted];
 }
 @end

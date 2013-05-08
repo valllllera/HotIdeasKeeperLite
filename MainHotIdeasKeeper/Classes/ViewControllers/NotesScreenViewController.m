@@ -71,6 +71,8 @@
     _scrollView.contentSize = CGSizeMake(320, 408);
     
     self.slideMenuController.panGestureEnabled = NO;
+    
+    [self fixButton:saveButton];
 }
 
 - (void)keyboardWasShown:(NSNotification *)notification
@@ -171,5 +173,11 @@
                          [self.navigationController pushViewController:viewNotesViewController animated:NO];
                          [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
                                 }];
+}
+
+- (void)fixButton:(UIButton *)button
+{
+    [button setBackgroundImage:[[button backgroundImageForState:UIControlStateNormal] resizableImageWithCapInsets:UIEdgeInsetsMake(20, 15, 20, 15)] forState:UIControlStateNormal];
+    [button setBackgroundImage:[[button backgroundImageForState:UIControlStateHighlighted] resizableImageWithCapInsets:UIEdgeInsetsMake(20, 15, 20, 15)] forState:UIControlStateHighlighted];
 }
 @end

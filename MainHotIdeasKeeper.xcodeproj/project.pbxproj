@@ -105,13 +105,22 @@
 		1A8FAAEF172FC28400236564 /* bg_button_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8FAAEB172FC28300236564 /* bg_button_pressed@2x.png */; };
 		1A8FAAF0172FC28400236564 /* bg_buttons_unpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8FAAEC172FC28300236564 /* bg_buttons_unpressed.png */; };
 		1A8FAAF1172FC28400236564 /* bg_buttons_unpressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8FAAED172FC28300236564 /* bg_buttons_unpressed@2x.png */; };
-		1A8FAAF4172FC89400236564 /* navi_button_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8FAAF2172FC89300236564 /* navi_button_background.png */; };
-		1A8FAAF5172FC89400236564 /* navi_button_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8FAAF3172FC89400236564 /* navi_button_background@2x.png */; };
 		1A8FAB25172FF73000236564 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8FAB24172FF73000236564 /* Default.png */; };
 		1A8FAB27172FF73800236564 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8FAB26172FF73700236564 /* Default@2x.png */; };
 		1A8FAB29172FF73B00236564 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8FAB28172FF73B00236564 /* Default-568h@2x.png */; };
+		1AA56977173A8C3800772B94 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA56975173A8C3800772B94 /* libGoogleAdMobAds.a */; };
+		1AA56978173A8C3800772B94 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1AA56976173A8C3800772B94 /* README.txt */; };
+		1AA5697A173A8CA600772B94 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA56979173A8CA600772B94 /* AudioToolbox.framework */; };
 		1AB233D2172D0F5500ADEF79 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB233D1172D0F5500ADEF79 /* icon.png */; };
 		1AB233D4172D0F5F00ADEF79 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB233D3172D0F5F00ADEF79 /* icon@2x.png */; };
+		1AE7513317381A3700D5ED0D /* navi_button_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE7513117381A3700D5ED0D /* navi_button_background.png */; };
+		1AE7513417381A3700D5ED0D /* navi_button_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE7513217381A3700D5ED0D /* navi_button_background@2x.png */; };
+		1AE7514117381EAB00D5ED0D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1AE7513F17381EAB00D5ED0D /* README.md */; };
+		1AE7514A1738210000D5ED0D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE751481738206F00D5ED0D /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1AE7514B1738210600D5ED0D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE751461738206500D5ED0D /* SystemConfiguration.framework */; };
+		1AE7514C1738210D00D5ED0D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE751441738205400D5ED0D /* QuartzCore.framework */; };
+		1AE7514D1738211200D5ED0D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE7514217381F4300D5ED0D /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1AE751501738240B00D5ED0D /* libChartboost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE7513E17381EAB00D5ED0D /* libChartboost.a */; };
 		1AEA61621720165B00CF3CD2 /* AboutScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEA61601720165B00CF3CD2 /* AboutScreenViewController.m */; };
 		1AEA6170172022B700CF3CD2 /* AddPlaceOnMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEA616E172022B700CF3CD2 /* AddPlaceOnMapViewController.m */; };
 		1AFE582117267FFF00A1779D /* button_item_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFE581F17267FFF00A1779D /* button_item_background.png */; };
@@ -144,7 +153,7 @@
 		7E17CBF01720549000BD06BA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E17CBEF1720549000BD06BA /* CoreLocation.framework */; };
 		8CAC93E7171EB9F7006D3621 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAC93E6171EB9F7006D3621 /* UIKit.framework */; };
 		8CAC93E9171EB9F7006D3621 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAC93E8171EB9F7006D3621 /* Foundation.framework */; };
-		8CAC93EB171EB9F7006D3621 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAC93EA171EB9F7006D3621 /* CoreGraphics.framework */; };
+		8CAC93EB171EB9F7006D3621 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAC93EA171EB9F7006D3621 /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		8CAC93F1171EB9F7006D3621 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CAC93EF171EB9F7006D3621 /* InfoPlist.strings */; };
 		8CAC93F3171EB9F7006D3621 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC93F2171EB9F7006D3621 /* main.m */; };
 		8CAC941D171EBA1C006D3621 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC9405171EBA1C006D3621 /* AppDelegate.m */; };
@@ -278,13 +287,33 @@
 		1A8FAAEB172FC28300236564 /* bg_button_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_button_pressed@2x.png"; sourceTree = "<group>"; };
 		1A8FAAEC172FC28300236564 /* bg_buttons_unpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_buttons_unpressed.png; sourceTree = "<group>"; };
 		1A8FAAED172FC28300236564 /* bg_buttons_unpressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_buttons_unpressed@2x.png"; sourceTree = "<group>"; };
-		1A8FAAF2172FC89300236564 /* navi_button_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navi_button_background.png; sourceTree = "<group>"; };
-		1A8FAAF3172FC89400236564 /* navi_button_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi_button_background@2x.png"; sourceTree = "<group>"; };
 		1A8FAB24172FF73000236564 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		1A8FAB26172FF73700236564 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		1A8FAB28172FF73B00236564 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		1AA5696A173A735E00772B94 /* iSoma.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iSoma.framework; sourceTree = "<group>"; };
+		1AA5696C173A8C3800772B94 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADAdMobExtras.h; path = "GoogleAdMobAdsSdkiOS-6.4.1/GADAdMobExtras.h"; sourceTree = "<group>"; };
+		1AA5696D173A8C3800772B94 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADAdNetworkExtras.h; path = "GoogleAdMobAdsSdkiOS-6.4.1/GADAdNetworkExtras.h"; sourceTree = "<group>"; };
+		1AA5696E173A8C3800772B94 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADAdSize.h; path = "GoogleAdMobAdsSdkiOS-6.4.1/GADAdSize.h"; sourceTree = "<group>"; };
+		1AA5696F173A8C3800772B94 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADBannerView.h; path = "GoogleAdMobAdsSdkiOS-6.4.1/GADBannerView.h"; sourceTree = "<group>"; };
+		1AA56970173A8C3800772B94 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADBannerViewDelegate.h; path = "GoogleAdMobAdsSdkiOS-6.4.1/GADBannerViewDelegate.h"; sourceTree = "<group>"; };
+		1AA56971173A8C3800772B94 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADInterstitial.h; path = "GoogleAdMobAdsSdkiOS-6.4.1/GADInterstitial.h"; sourceTree = "<group>"; };
+		1AA56972173A8C3800772B94 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADInterstitialDelegate.h; path = "GoogleAdMobAdsSdkiOS-6.4.1/GADInterstitialDelegate.h"; sourceTree = "<group>"; };
+		1AA56973173A8C3800772B94 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADRequest.h; path = "GoogleAdMobAdsSdkiOS-6.4.1/GADRequest.h"; sourceTree = "<group>"; };
+		1AA56974173A8C3800772B94 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADRequestError.h; path = "GoogleAdMobAdsSdkiOS-6.4.1/GADRequestError.h"; sourceTree = "<group>"; };
+		1AA56975173A8C3800772B94 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAdMobAds.a; path = "GoogleAdMobAdsSdkiOS-6.4.1/libGoogleAdMobAds.a"; sourceTree = "<group>"; };
+		1AA56976173A8C3800772B94 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = "GoogleAdMobAdsSdkiOS-6.4.1/README.txt"; sourceTree = "<group>"; };
+		1AA56979173A8CA600772B94 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1AB233D1172D0F5500ADEF79 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
 		1AB233D3172D0F5F00ADEF79 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../../icon@2x.png"; sourceTree = "<group>"; };
+		1AE7513117381A3700D5ED0D /* navi_button_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navi_button_background.png; sourceTree = "<group>"; };
+		1AE7513217381A3700D5ED0D /* navi_button_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi_button_background@2x.png"; sourceTree = "<group>"; };
+		1AE7513617381B1600D5ED0D /* Chartboost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chartboost.h; sourceTree = "<group>"; };
+		1AE7513E17381EAB00D5ED0D /* libChartboost.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libChartboost.a; sourceTree = "<group>"; };
+		1AE7513F17381EAB00D5ED0D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		1AE7514217381F4300D5ED0D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		1AE751441738205400D5ED0D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1AE751461738206500D5ED0D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1AE751481738206F00D5ED0D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1AEA615F1720165B00CF3CD2 /* AboutScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutScreenViewController.h; sourceTree = "<group>"; };
 		1AEA61601720165B00CF3CD2 /* AboutScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutScreenViewController.m; sourceTree = "<group>"; };
 		1AEA616D172022B700CF3CD2 /* AddPlaceOnMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPlaceOnMapViewController.h; sourceTree = "<group>"; };
@@ -366,10 +395,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA5697A173A8CA600772B94 /* AudioToolbox.framework in Frameworks */,
+				8CAC93E9171EB9F7006D3621 /* Foundation.framework in Frameworks */,
+				7E17CBF01720549000BD06BA /* CoreLocation.framework in Frameworks */,
+				1AE7514D1738211200D5ED0D /* AdSupport.framework in Frameworks */,
+				1AE7514C1738210D00D5ED0D /* QuartzCore.framework in Frameworks */,
+				1AE7514B1738210600D5ED0D /* SystemConfiguration.framework in Frameworks */,
+				1AE7514A1738210000D5ED0D /* StoreKit.framework in Frameworks */,
 				088B46001725984C002719C2 /* Accounts.framework in Frameworks */,
 				088B45FE1725983C002719C2 /* Social.framework in Frameworks */,
 				1A401C261724408C00FEF66A /* Twitter.framework in Frameworks */,
-				7E17CBF01720549000BD06BA /* CoreLocation.framework in Frameworks */,
 				088B45EE1722ED76002719C2 /* libsqlite3.dylib in Frameworks */,
 				8CAC944F172135E6006D3621 /* iAd.framework in Frameworks */,
 				8CAC944D172131AA006D3621 /* MessageUI.framework in Frameworks */,
@@ -378,8 +413,9 @@
 				0814F93A1720590F00D7C3CC /* MediaPlayer.framework in Frameworks */,
 				0814F9381720590200D7C3CC /* MobileCoreServices.framework in Frameworks */,
 				8CAC93E7171EB9F7006D3621 /* UIKit.framework in Frameworks */,
-				8CAC93E9171EB9F7006D3621 /* Foundation.framework in Frameworks */,
 				8CAC93EB171EB9F7006D3621 /* CoreGraphics.framework in Frameworks */,
+				1AE751501738240B00D5ED0D /* libChartboost.a in Frameworks */,
+				1AA56977173A8C3800772B94 /* libGoogleAdMobAds.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,8 +610,8 @@
 		1A8FAAB9172FAEB400236564 /* MainScreenViewController_secondDesign */ = {
 			isa = PBXGroup;
 			children = (
-				1A8FAAF2172FC89300236564 /* navi_button_background.png */,
-				1A8FAAF3172FC89400236564 /* navi_button_background@2x.png */,
+				1AE7513117381A3700D5ED0D /* navi_button_background.png */,
+				1AE7513217381A3700D5ED0D /* navi_button_background@2x.png */,
 				1A8FAAEA172FC28300236564 /* bg_button_pressed.png */,
 				1A8FAAEB172FC28300236564 /* bg_button_pressed@2x.png */,
 				1A8FAAEC172FC28300236564 /* bg_buttons_unpressed.png */,
@@ -606,6 +642,16 @@
 				1A8FAAD1172FAEB400236564 /* note_button_unpressed@2x.png */,
 			);
 			path = MainScreenViewController_secondDesign;
+			sourceTree = "<group>";
+		};
+		1AE7513517381B1600D5ED0D /* Chartboost */ = {
+			isa = PBXGroup;
+			children = (
+				1AE7513E17381EAB00D5ED0D /* libChartboost.a */,
+				1AE7513F17381EAB00D5ED0D /* README.md */,
+				1AE7513617381B1600D5ED0D /* Chartboost.h */,
+			);
+			path = Chartboost;
 			sourceTree = "<group>";
 		};
 		1AEA615E1720164900CF3CD2 /* AboutScreenViewController */ = {
@@ -650,6 +696,11 @@
 		8CAC93DA171EB9F7006D3621 = {
 			isa = PBXGroup;
 			children = (
+				1AA56979173A8CA600772B94 /* AudioToolbox.framework */,
+				1AE751481738206F00D5ED0D /* StoreKit.framework */,
+				1AE751461738206500D5ED0D /* SystemConfiguration.framework */,
+				1AE751441738205400D5ED0D /* QuartzCore.framework */,
+				1AE7514217381F4300D5ED0D /* AdSupport.framework */,
 				8CAC93EC171EB9F7006D3621 /* MainHotIdeasKeeper */,
 				8CAC93E5171EB9F7006D3621 /* Frameworks */,
 				8CAC93E4171EB9F7006D3621 /* Products */,
@@ -667,6 +718,7 @@
 		8CAC93E5171EB9F7006D3621 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1AA5696A173A735E00772B94 /* iSoma.framework */,
 				088B45FF1725984C002719C2 /* Accounts.framework */,
 				088B45FD1725983C002719C2 /* Social.framework */,
 				1A401C251724408C00FEF66A /* Twitter.framework */,
@@ -757,6 +809,18 @@
 		8CAC9409171EBA1C006D3621 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				1AA5696C173A8C3800772B94 /* GADAdMobExtras.h */,
+				1AA5696D173A8C3800772B94 /* GADAdNetworkExtras.h */,
+				1AA5696E173A8C3800772B94 /* GADAdSize.h */,
+				1AA5696F173A8C3800772B94 /* GADBannerView.h */,
+				1AA56970173A8C3800772B94 /* GADBannerViewDelegate.h */,
+				1AA56971173A8C3800772B94 /* GADInterstitial.h */,
+				1AA56972173A8C3800772B94 /* GADInterstitialDelegate.h */,
+				1AA56973173A8C3800772B94 /* GADRequest.h */,
+				1AA56974173A8C3800772B94 /* GADRequestError.h */,
+				1AA56975173A8C3800772B94 /* libGoogleAdMobAds.a */,
+				1AA56976173A8C3800772B94 /* README.txt */,
+				1AE7513517381B1600D5ED0D /* Chartboost */,
 				D55DE10F1737CEE300F1A8BC /* Macroses.h */,
 				1A8ED9B717219A55004DE58D /* SQLiteAccess */,
 				8CAC940A171EBA1C006D3621 /* NVSlideMenuController */,
@@ -1032,11 +1096,13 @@
 				1A8FAAEF172FC28400236564 /* bg_button_pressed@2x.png in Resources */,
 				1A8FAAF0172FC28400236564 /* bg_buttons_unpressed.png in Resources */,
 				1A8FAAF1172FC28400236564 /* bg_buttons_unpressed@2x.png in Resources */,
-				1A8FAAF4172FC89400236564 /* navi_button_background.png in Resources */,
-				1A8FAAF5172FC89400236564 /* navi_button_background@2x.png in Resources */,
 				1A8FAB25172FF73000236564 /* Default.png in Resources */,
 				1A8FAB27172FF73800236564 /* Default@2x.png in Resources */,
 				1A8FAB29172FF73B00236564 /* Default-568h@2x.png in Resources */,
+				1AE7513317381A3700D5ED0D /* navi_button_background.png in Resources */,
+				1AE7513417381A3700D5ED0D /* navi_button_background@2x.png in Resources */,
+				1AE7514117381EAB00D5ED0D /* README.md in Resources */,
+				1AA56978173A8C3800772B94 /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1056,8 +1122,8 @@
 				1A052C6F171F5282007A0ACD /* Note.m in Sources */,
 				1A052C72171F5390007A0ACD /* DataManager.m in Sources */,
 				1A052C84171F5C25007A0ACD /* ViewNotesViewController.m in Sources */,
-				1A052C9F17200F9D007A0ACD /* CameraScreenViewController.m in Sources */,
 				1AEA61621720165B00CF3CD2 /* AboutScreenViewController.m in Sources */,
+				1A052C9F17200F9D007A0ACD /* CameraScreenViewController.m in Sources */,
 				1AEA6170172022B700CF3CD2 /* AddPlaceOnMapViewController.m in Sources */,
 				0814F94E1721795000D7C3CC /* Messages.m in Sources */,
 				7E17CBEE1720343D00BD06BA /* Annotation.m in Sources */,
@@ -1244,11 +1310,20 @@
 		8CAC9401171EB9F7006D3621 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MainHotIdeasKeeper/MainHotIdeasKeeper-Prefix.pch";
 				INFOPLIST_FILE = "MainHotIdeasKeeper/MainHotIdeasKeeper-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MainHotIdeasKeeper/Classes/Libs/Chartboost\"",
+					"\"$(SRCROOT)/MainHotIdeasKeeper/Classes/Libs/GoogleAdMobAdsSdkiOS-6.4.1\"",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1257,11 +1332,20 @@
 		8CAC9402171EB9F7006D3621 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MainHotIdeasKeeper/MainHotIdeasKeeper-Prefix.pch";
 				INFOPLIST_FILE = "MainHotIdeasKeeper/MainHotIdeasKeeper-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MainHotIdeasKeeper/Classes/Libs/Chartboost\"",
+					"\"$(SRCROOT)/MainHotIdeasKeeper/Classes/Libs/GoogleAdMobAdsSdkiOS-6.4.1\"",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

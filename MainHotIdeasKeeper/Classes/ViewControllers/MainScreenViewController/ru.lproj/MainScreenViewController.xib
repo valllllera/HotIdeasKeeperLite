@@ -42,7 +42,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrameSize">{320, 504}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSNextKeyView" ref="570017195"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -54,7 +54,7 @@
 					<object class="IBUIImageView" id="221890462">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{0, 4}, {320, 37}}</string>
+						<string key="NSFrame">{{0, 8}, {320, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSNextKeyView" ref="368311733"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -68,7 +68,7 @@
 					<object class="IBUIButton" id="349644251">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{0, 45}, {159, 158}}</string>
+						<string key="NSFrame">{{0, 52}, {159, 158}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSNextKeyView" ref="118497529"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -111,9 +111,8 @@
 					<object class="IBUIButton" id="383717403">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{160, 204}, {160, 157}}</string>
+						<string key="NSFrame">{{160, 211}, {160, 157}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -128,9 +127,9 @@
 							<string key="NSResourceName">geotagging_button_pressed.png</string>
 						</object>
 						<reference key="IBUISelectedBackgroundImage" ref="239890715"/>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage" id="332171544">
+						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">camera_video_button_unpressed.png</string>
+							<string key="NSResourceName">geotegging_button_unpressed.png</string>
 						</object>
 						<reference key="IBUIFontDescription" ref="291460819"/>
 						<reference key="IBUIFont" ref="823111667"/>
@@ -138,7 +137,7 @@
 					<object class="IBUIButton" id="118497529">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{160, 45}, {160, 158}}</string>
+						<string key="NSFrame">{{160, 52}, {160, 158}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSNextKeyView" ref="693102774"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -165,9 +164,9 @@
 					<object class="IBUILabel" id="368311733">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{119, 12}, {82, 21}}</string>
+						<string key="NSFrame">{{119, 16}, {82, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSNextKeyView" ref="426214843"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -189,38 +188,10 @@
 						</object>
 						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 					</object>
-					<object class="IBUIImageView" id="570017195">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrameSize">{320, 6}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSNextKeyView" ref="221890462"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">second_shadow@2x.png</string>
-						</object>
-					</object>
-					<object class="IBUIImageView" id="426214843">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{0, 40}, {320, 5}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSNextKeyView" ref="349644251"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">buttons_shadow@2x.png</string>
-						</object>
-					</object>
 					<object class="IBUIButton" id="693102774">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{0, 204}, {159, 157}}</string>
+						<string key="NSFrame">{{0, 211}, {159, 157}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSNextKeyView" ref="383717403"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -237,7 +208,10 @@
 							<string key="NSResourceName">camera_video_button_pressed.png</string>
 						</object>
 						<reference key="IBUISelectedBackgroundImage" ref="676768059"/>
-						<reference key="IBUINormalBackgroundImage" ref="332171544"/>
+						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">camera_video_button_unpressed.png</string>
+						</object>
 						<reference key="IBUIFontDescription" ref="291460819"/>
 						<reference key="IBUIFont" ref="823111667"/>
 					</object>
@@ -385,13 +359,11 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="368311733"/>
 							<reference ref="938441800"/>
-							<reference ref="221890462"/>
+							<reference ref="349644251"/>
 							<reference ref="383717403"/>
 							<reference ref="118497529"/>
-							<reference ref="570017195"/>
-							<reference ref="426214843"/>
-							<reference ref="349644251"/>
 							<reference ref="693102774"/>
+							<reference ref="221890462"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -437,16 +409,6 @@
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">16</int>
-						<reference key="object" ref="570017195"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">18</int>
-						<reference key="object" ref="426214843"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">22</int>
 						<reference key="object" ref="693102774"/>
 						<reference key="parent" ref="191373211"/>
@@ -462,14 +424,12 @@
 				<string key="10.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="11.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="12.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="16.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="18.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="22.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<real value="1" key="22.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<real value="1" key="4.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="1" key="6.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="0.0" key="6.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="7.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<real value="1" key="7.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 			</dictionary>
@@ -477,7 +437,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">33</int>
+			<int key="maxID">35</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
@@ -487,15 +447,14 @@
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="add_bg.png">{320, 38}</string>
 			<string key="backgrond.png">{320, 480}</string>
-			<string key="buttons_shadow@2x.png">{414, 7}</string>
 			<string key="camera_photo_button_pressed.png">{150, 150}</string>
 			<string key="camera_photo_button_unpressed.png">{150, 150}</string>
 			<string key="camera_video_button_pressed.png">{150, 150}</string>
 			<string key="camera_video_button_unpressed.png">{150, 150}</string>
 			<string key="geotagging_button_pressed.png">{150, 150}</string>
+			<string key="geotegging_button_unpressed.png">{150, 150}</string>
 			<string key="note_button_pressed.png">{150, 150}</string>
 			<string key="note_button_unpressed.png">{150, 150}</string>
-			<string key="second_shadow@2x.png">{414, 7}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">2083</string>
 	</data>

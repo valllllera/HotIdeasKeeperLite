@@ -6,18 +6,27 @@
 //  Copyright (c) 2013 iOS - Eugene Lipskiy. All rights reserved.
 //
 
+#import <iAd/iAd.h>
 #import "MainScreenViewController.h"
 #import "CameraScreenViewController.h"
 #import "NotesScreenViewController.h"
 #import "NVSlideMenuController.h"
 #import "AddPlaceOnMapViewController.h"
 #import "AddNoteWithPhotoViewController.h"
+#import "Chartboost.h"
+#import "GADBannerView.h"
+
 
 @interface MainScreenViewController ()
+
+@property (nonatomic, strong) IBOutlet UIView *contentView;
 
 @end
 
 @implementation MainScreenViewController
+{
+    ADBannerView *_bannerView;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,12 +46,14 @@
     NSLog(@"asd");
     isChoosen = NO;
     
+    [self.view addSubview:_bannerView];
+    
     UIButton *menuButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
     [menuButton setBackgroundImage:[UIImage imageNamed:@"menu_button_background"] forState:UIControlStateNormal];
     [menuButton addTarget:self.slideMenuController action:@selector(toggleMenuAnimated:) forControlEvents:UIControlEventTouchUpInside];
     menuButton.frame = CGRectMake(0, 0, 50, 50);
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:menuButton];
-    
+        
     UILabel* titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,0, 40, 40)];
     titleLabel.text = self.navigationItem.title;
     [titleLabel setBackgroundColor:[UIColor clearColor]];
@@ -59,11 +70,13 @@
     self.slideMenuController.panGestureEnabled = YES;
 }
 
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 - (void)viewDidUnload {
     [self setAddLabel:nil];
@@ -188,12 +201,15 @@
 {
     NotesScreenViewController *notesScreenViewController = [[NotesScreenViewController alloc]init];
     [self.navigationController pushViewController:notesScreenViewController animated:YES];
+    [[Chartboost sharedChartboost] showInterstitial:@"Add Note"];
 }
 
 - (IBAction)addPlaceButtonPressed:(id)sender
 {
     AddPlaceOnMapViewController *addPlaceOnMapViewController = [[AddPlaceOnMapViewController alloc]init];
     [self. navigationController pushViewController:addPlaceOnMapViewController animated:YES];
+    [[Chartboost sharedChartboost] showInterstitial:@"Add Place"];
+    
 }
 
 - (IBAction)showCameraVideoController:(id)sender
@@ -238,5 +254,6 @@
 
 
 }
+
 
 @end

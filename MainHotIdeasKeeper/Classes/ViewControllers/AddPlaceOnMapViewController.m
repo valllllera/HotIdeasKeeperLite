@@ -77,6 +77,7 @@ static float y;
     [self setSitButton:nil];
     [self setHibridButton:nil];
     [self setScrollView:nil];
+    [self setSavePlaceButton:nil];
     [super viewDidUnload];
     self.map = nil;
 }
@@ -136,6 +137,10 @@ static float y;
     
     self.slideMenuController.panGestureEnabled = NO;
 
+    [self fixButton:_mapButton];
+    [self fixButton:_sitButton];
+    [self fixButton:_hibridButton];
+    [self fixButton:_savePlaceButton];
 }
 
 
@@ -344,5 +349,11 @@ static float y;
                          [self.navigationController pushViewController:viewNotesWithMapController animated:NO];
                          [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
                      }];}
+
+- (void)fixButton:(UIButton *)button
+{
+    [button setBackgroundImage:[[button backgroundImageForState:UIControlStateNormal] resizableImageWithCapInsets:UIEdgeInsetsMake(20, 15, 20, 15)] forState:UIControlStateNormal];
+    [button setBackgroundImage:[[button backgroundImageForState:UIControlStateHighlighted] resizableImageWithCapInsets:UIEdgeInsetsMake(20, 15, 20, 15)] forState:UIControlStateHighlighted];
+}
 
 @end
