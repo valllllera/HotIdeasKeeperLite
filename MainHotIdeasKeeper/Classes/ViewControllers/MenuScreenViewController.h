@@ -19,6 +19,7 @@
 - (IBAction)mainButtonPressed:(id)sender;
 - (IBAction)aboutUsButtonPressed:(id)sender;
 - (IBAction)geoButtonPressed:(id)sender;
+- (IBAction)buyProButton:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIButton *siteLinkBtn;
 - (IBAction)siteLinkBtnClicked:(id)sender;
@@ -27,5 +28,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *mainButton;
 @property (weak, nonatomic) IBOutlet UIButton *notesButton;
 @property (weak, nonatomic) IBOutlet UIButton *geoButton;
+@property (strong, nonatomic) IBOutlet UIButton *proVersionButton;
 
 @end

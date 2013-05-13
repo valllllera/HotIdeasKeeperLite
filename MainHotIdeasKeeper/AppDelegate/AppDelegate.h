@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "Chartboost.h"
+#import "MMSDK.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, ChartboostDelegate>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, ChartboostDelegate, CLLocationManagerDelegate>
 
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) NSMutableArray *images;
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @end

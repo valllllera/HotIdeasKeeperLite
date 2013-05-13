@@ -348,7 +348,23 @@ static float y;
                          [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
                          [self.navigationController pushViewController:viewNotesWithMapController animated:NO];
                          [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
-                     }];}
+                     }];
+    
+    UIAlertView *buyPROAlert = [[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Купить PRO-версию", nil) message:@"Buy PRO-version without ads" delegate:self cancelButtonTitle:NSLocalizedString(@"Позже",nil) otherButtonTitles:NSLocalizedString(@"Купить", nil), nil];
+    
+    [buyPROAlert show];
+}
+
+-(void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
+    if (buttonIndex == 1)
+    {
+        NSString *stringURL = @"https://itunes.apple.com/us/app/hot-ideas-keeper-pro/id643216734?l=ru&ls=1&mt=8";
+        NSURL *url = [NSURL URLWithString:stringURL];
+        [[UIApplication sharedApplication] openURL:url];
+    }
+}
 
 - (void)fixButton:(UIButton *)button
 {

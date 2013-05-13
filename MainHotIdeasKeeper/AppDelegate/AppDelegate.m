@@ -58,7 +58,12 @@
     self.window.rootViewController = slideMenuViewController;
 
     
+    [MMSDK initialize];
+    self.locationManager = [[CLLocationManager alloc]init];
+    [self.locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+    [self.locationManager startUpdatingLocation];
     
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

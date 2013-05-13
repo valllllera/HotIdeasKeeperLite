@@ -15,7 +15,11 @@
 #import "AddNoteWithPhotoViewController.h"
 #import "Chartboost.h"
 #import "GADBannerView.h"
+#import "AppDelegate.h"
 
+#define MILLENNIAL_IPHONE_AD_VIEW_FRAME CGRectMake(0, 366, 320, 50)
+#define MILLENNIAL_IPAD_AD_VIEW_FRAME CGRectMake(0, 0, 728, 90)
+#define MILLENNIAL_AD_VIEW_FRAME ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? MILLENNIAL_IPAD_AD_VIEW_FRAME : MILLENNIAL_IPHONE_AD_VIEW_FRAME)
 
 @interface MainScreenViewController ()
 
@@ -68,6 +72,27 @@
     [_mapButton.titleLabel setFont:[UIFont fontWithName:@"OpenSans-LightItalic" size:30]];
     
     self.slideMenuController.panGestureEnabled = YES;
+    
+    
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    MMRequest *request = [MMRequest requestWithLocation:appDelegate.locationManager.location];
+    
+    MMAdView *banner = [[MMAdView alloc] initWithFrame:MILLENNIAL_AD_VIEW_FRAME apid:@"122501"
+                                    rootViewController:self];
+    [self.view addSubview:banner];
+    [banner getAdWithRequest:request onCompletion:^(BOOL success, NSError *error)
+    {
+        if (success)
+        {
+            NSLog(@"BANNER AD REQUEST SUCCEEDED");
+        }
+        else
+        {
+            NSLog(@"BANNER AD REQUEST FAILED WITH ERROR: %@", error);
+        }
+    }];
+
 }
 
 
@@ -237,8 +262,6 @@
 
 - (void) makeUIImagePickerControllerForCamera:(BOOL)camera
 {
-
-
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
     if (camera) {
@@ -251,9 +274,6 @@
     [picker setMediaTypes:[NSArray arrayWithObjects:(NSString *) kUTTypeImage, nil]];
     
     [self presentModalViewController: picker animated: YES];
-
-
 }
-
 
 @end

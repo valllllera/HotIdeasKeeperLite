@@ -48,11 +48,13 @@
     [_notesButton.titleLabel setFont:[UIFont fontWithName:@"OpenSans-LightItalic" size:30]];
     [_geoButton.titleLabel setFont:[UIFont fontWithName:@"OpenSans-LightItalic" size:30]];
     [_libraryLabel setFont:[UIFont fontWithName:@"OpenSans-LightItalic" size:13]];
+    [_proVersionButton.titleLabel setFont:[UIFont fontWithName:@"OpenSans-LightItalic" size:30]];
     
     [self fixButton:_aboutButton];
     [self fixButton:_mainButton];
     [self fixButton:_notesButton];
     [self fixButton:_geoButton];
+    [self fixButton:_proVersionButton];
     
 }
 
@@ -70,6 +72,7 @@
     [self setNotesButton:nil];
     [self setGeoButton:nil];
     [self setAboutButton:nil];
+    [self setProVersionButton:nil];
     [super viewDidUnload];
 }
 - (IBAction)notesButtonPressed:(id)sender
@@ -94,6 +97,13 @@
 {
     ViewNoteWithMapController *aboutScreenViewController = [[ViewNoteWithMapController alloc]init];
     [self.slideMenuController setContentViewController:[[UINavigationController alloc]initWithRootViewController:aboutScreenViewController] animated:YES completion:nil];
+}
+
+- (IBAction)buyProButton:(id)sender
+{
+    NSString *stringURL = @"https://itunes.apple.com/us/app/hot-ideas-keeper-pro/id643216734?l=ru&ls=1&mt=8";
+    NSURL *url = [NSURL URLWithString:stringURL];
+    [[UIApplication sharedApplication] openURL:url];
 }
 
 

@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
 #import "GADBannerView.h"
+#import "MMAdView.h"
 
 @interface MainScreenViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate, ADBannerViewDelegate>
 
 {
+    MMAdView *_bannerAdView;
     UIImagePickerController *imagePick;
     UIButton *button;
     BOOL isChoosen ;
