@@ -300,7 +300,6 @@
 		1A8FAB24172FF73000236564 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		1A8FAB26172FF73700236564 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		1A8FAB28172FF73B00236564 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
-		1AA5696A173A735E00772B94 /* iSoma.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iSoma.framework; sourceTree = "<group>"; };
 		1AA5696C173A8C3800772B94 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADAdMobExtras.h; path = "GoogleAdMobAdsSdkiOS-6.4.1/GADAdMobExtras.h"; sourceTree = "<group>"; };
 		1AA5696D173A8C3800772B94 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADAdNetworkExtras.h; path = "GoogleAdMobAdsSdkiOS-6.4.1/GADAdNetworkExtras.h"; sourceTree = "<group>"; };
 		1AA5696E173A8C3800772B94 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADAdSize.h; path = "GoogleAdMobAdsSdkiOS-6.4.1/GADAdSize.h"; sourceTree = "<group>"; };
@@ -739,13 +738,6 @@
 		8CAC93DA171EB9F7006D3621 = {
 			isa = PBXGroup;
 			children = (
-				1A247D80173FB27B00141BCD /* PassKit.framework */,
-				1A247D7E173FB25100141BCD /* AVFoundation.framework */,
-				1AA56979173A8CA600772B94 /* AudioToolbox.framework */,
-				1AE751481738206F00D5ED0D /* StoreKit.framework */,
-				1AE751461738206500D5ED0D /* SystemConfiguration.framework */,
-				1AE751441738205400D5ED0D /* QuartzCore.framework */,
-				1AE7514217381F4300D5ED0D /* AdSupport.framework */,
 				8CAC93EC171EB9F7006D3621 /* MainHotIdeasKeeper */,
 				8CAC93E5171EB9F7006D3621 /* Frameworks */,
 				8CAC93E4171EB9F7006D3621 /* Products */,
@@ -763,7 +755,13 @@
 		8CAC93E5171EB9F7006D3621 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1AA5696A173A735E00772B94 /* iSoma.framework */,
+				1A247D80173FB27B00141BCD /* PassKit.framework */,
+				1A247D7E173FB25100141BCD /* AVFoundation.framework */,
+				1AA56979173A8CA600772B94 /* AudioToolbox.framework */,
+				1AE751481738206F00D5ED0D /* StoreKit.framework */,
+				1AE751461738206500D5ED0D /* SystemConfiguration.framework */,
+				1AE751441738205400D5ED0D /* QuartzCore.framework */,
+				1AE7514217381F4300D5ED0D /* AdSupport.framework */,
 				088B45FF1725984C002719C2 /* Accounts.framework */,
 				088B45FD1725983C002719C2 /* Social.framework */,
 				1A401C251724408C00FEF66A /* Twitter.framework */,
